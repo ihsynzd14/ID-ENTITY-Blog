@@ -1,0 +1,376 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #7464a1;
+  --bs-pink: #d63384;
+  --bs-red: #a16468;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #e4c662;
+  --bs-green: #67c29c;
+  --bs-teal: #64a19d;
+  --bs-cyan: #1cabc4;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #64a19d;
+  --bs-secondary: #7464a1;
+  --bs-success: #67c29c;
+  --bs-info: #1cabc4;
+  --bs-warning: #e4c662;
+  --bs-danger: #a16468;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-primary-rgb: 100, 161, 157;
+  --bs-secondary-rgb: 116, 100, 161;
+  --bs-success-rgb: 103, 194, 156;
+  --bs-info-rgb: 28, 171, 196;
+  --bs-warning-rgb: 228, 198, 98;
+  --bs-danger-rgb: 161, 100, 104;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+nav {
+  background: linear-gradient(to right, #cb0da8, #c500a1);
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+.item a:hover{
+  color: wheat;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.logo a:hover {
+  text-decoration: none;
+  color:wheat;
+}
+
+.menu{
+  margin-top: 10px;
+}
+
+.menu li {
+  font-size: 18px ;
+  padding: 15px 5px;
+  white-space: nowrap;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.logo a{
+  font-weight: bold;
+  font-size:25px;
+  color: #ddd;
+}
+.alert.alert-success{
+align-items: center;
+justify-content: center;
+}
+
+.vh-100.bg-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item a,
+.toggle a {
+  color: #ddd;
+  font-size: 20px;
+}
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.form-right i {
+    font-size: 100px;
+}
+
+.btn:active{
+  color:green;
+}
+
+.btn.btn-primary{
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  margin-top: 6rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://live.staticflickr.com/65535/52066304986_95201ba6ce_k.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1, .masthead .h1 {
+  opacity: 80%;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(to bottom, #CDBDC3 0%, #B192A1 75%, #8B5E73 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.masthead h2, .masthead .h2 {
+  background: linear-gradient(to bottom, #CDBDC3 0%, #B192A1 75%, #8B5E73 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  max-width: 40rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .masthead h1, .masthead .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1, .masthead .h1 {
+    font-size: 8.5rem;
+    line-height: 8rem;
+    letter-spacing: 1.8rem;
+  }
+  .masthead h2, .masthead .h2 {
+    max-width: 40rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #64a19d;
+  border-color: #64a19d;
+}
+.btn.btn-primary:hover {
+  color: #fff;
+  background-color: #558985;
+  border-color: #50817e;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor:pointer;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+
+.gradient-custom-3 {
+/* fallback for old browsers */
+background:rgba(192, 75, 250, 0.5);
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(192, 75, 250, 0.5), rgba(251, 48, 173, 0.609));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(143, 40, 195, 0.343), rgba(139, 7, 88, 0.606))
+}
+
+.gradient-custom-6 {
+  /* fallback for old browsers */
+  background:rgba(197, 94, 248, 0.5);
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(199, 98, 250, 0.5), rgba(254, 96, 193, 0.609));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(188, 80, 242, 0.343), rgba(216, 18, 140, 0.606))
+  }
+
+  .gradient-custom-8 {
+    /* fallback for old browsers */
+    background:rgba(197, 94, 248, 0.5);
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(199, 98, 250, 0.5), rgba(254, 96, 193, 0.609));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.343), rgba(0, 0, 0, 0.606))
+    }
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button.secondary {
+      border: 0;
+
+  }
+  .button a {
+      padding: 7.5px 15px;
+      background: #cb12a6;
+      border: 1px #e2e2e2 solid;
+      border-radius:50em;
+  }
+  .button.secondary a {
+      background: #a51889;   
+      border-radius:15px; 
+  }
+  .button a:hover {
+      text-decoration: none;
+      transition:all .25s;
+  }
+  .button a:hover {
+    transition: all .5s ease-out;
+      background: #f44d4d;
+      border-color: #7d0808;
+  }
+  .button.secondary a:hover {
+      color: #ddd;
+  } 
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+  }
+  .item {
+      order: 1;
+  }
+  .button {
+      order: 2;
+  }
+  .menu li {
+      padding: 15px 10px;
+  }
+  .menu li.button {
+      padding-right: 0;
+  }
+}
+
